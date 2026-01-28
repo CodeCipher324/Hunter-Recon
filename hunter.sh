@@ -63,7 +63,7 @@ cat "$BASE/gau.txt" "$BASE/wayback.txt" | sort -u > "$BASE/history.txt"
 
 # ===================== HAKRAWLER ==================
 echo "[+] Hakrawler"
-cat "$BASE/live.txt" | hakrawler -depth 2 -plain > "$BASE/hakrawler.txt"
+cat "$BASE/live.txt" | hakrawler "$BASE/hakrawler.txt"
 
 # ===================== KATANA =====================
 echo "[+] Katana (depth 10)"
